@@ -1,6 +1,5 @@
 import pygame
 import numpy as np
-import time
 from pygame.locals import *
 from OpenGL.GL import *
 from OpenGL.GLU import *  # more advanced openGl stuff
