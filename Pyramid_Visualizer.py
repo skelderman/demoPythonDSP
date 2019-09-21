@@ -212,6 +212,8 @@ def main():
     t2.spike(3)
     t3.spike(3)
 
+    # REFACTOR MY PROJECT
+
 
     while True:  # infinite loop
         for event in pygame.event.get():
