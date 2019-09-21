@@ -204,8 +204,8 @@ def main():
     # glRotatef(180, 1, 0, 0)  # optional rotate initial camera view
 
     t1 = Pyramid([0, 0, 0], [204/255, 1, 203/255], .5, 2)
-    t2 = Pyramid([4, 0, 2], [118/255, 213/255, 237/255], 2, 1)
-    t3 = Pyramid([-1, 0, -2], [56/255, 2/255, 59/255], 1, 3)
+    t2 = Pyramid([4, 0, 2], [118/255, 213/255, 237/255], 1, 1)
+    t3 = Pyramid([-1, 0, -2], [56/255, 2/255, 59/255], 0.8, 3)
     a = 1
 
     t1.spike(3)
@@ -256,9 +256,9 @@ def main():
         t3.draw()
 
         if a%15 == 0:
-            t1.spike(2)
-            t2.spike(1)
-            t3.spike(3)
+            t1.spike(1)
+            t2.spike(3)
+            t3.spike(2)
 
         a += 1
         pygame.display.flip()  # actually update the screen to show stuff
